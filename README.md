@@ -36,9 +36,9 @@ Folder "datasets" contains an exmpale bipartite graph bi_writer.bin, which is do
 
 The input graph should be in "binary" format by default. In folder "datatsets", there is an example bipartitie graph bi_writer.bin. Here, edgelist2binary is the executable to transform a "txt" graph into our binary form.
 
-When argument[2] is 1, MSBE will build the index according to arguments[3][4][5], and arguments[6]-[9] will be ignored. The index will be stored in folder "datatsets" and named by the arguments, i.e., "input graph" + "alpha * 100" + "gamma * 100" + "LG/SS.bin". 
+When argument[2]=1, MSBE will build the index according to arguments[3][4][5], and arguments[6]-[9] will be ignored. The index will be stored in folder "datatsets" and named by the arguments, i.e., "input graph" + "alpha x 100" + "gamma x 100" + "LG/SS.bin". 
 
-After the index is constructed, it is ready to make index based enumeration. Specifically, set argument[2]=0, argument[6]=1 and argument[7]=LG/SS to load the corresponding index. (Note that, the name of the loaded index will be dirived in a same way as above, i.e., "input graph" + "alpha * 100" + "gamma * 100" + "LG/SS.bin". Thus, make sure arguments [3] and [4] are correctly set when loading the corresponding index.)
+After the index is constructed, it is ready to make index based enumeration. Specifically, set argument[2]=0, argument[6]=1 and argument[7]=LG/SS to load the corresponding index. (Note that, the name of the loaded index will be dirived in a same way as above, i.e., "input graph" + "alpha x 100" + "gamma x 100" + "LG/SS.bin". Thus, make sure arguments [3] and [4] are correctly set when loading the corresponding index.)
 
 As for atgument[8], "1" means vertex reduction without index, "2" means index based vertex reduction. Thus, if you set atgument[8]=2, make sure the index is loaded, i.e., argument[6]=1.
 
