@@ -9,7 +9,7 @@ Folder "datasets" contains an exmpale bipartite graph bi_writer.bin, which is do
 
 ## Running Format
 
-./MSBE [1]input graph [2]build index or not (0/1) [3]alpha (0.01->100) [4]gamma (0.01 -> 1) [5]index name (LG/SS) [6]load index or not (0/1) [7] index name (LG/SS) [8]vertex reduction method (1: vr without index. 2: index-based vr.) [9]epsilon (similarity threshold) [10]tau (size constraint)
+./MSBE [1] input graph  [2] build index or not (0/1)  [3] alpha (0.01->100)  [4] gamma (0.01 -> 1)  [5] index name (LG/SS)  [6] load index or not (0/1)  [7]  index name (LG/SS)  [8] vertex reduction method (1: vr without index. 2: index-based vr.)  [9] epsilon (similarity threshold)  [10] tau (size constraint)
 
 **Running example for building indexLG**
 
