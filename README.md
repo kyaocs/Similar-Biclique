@@ -4,7 +4,7 @@ This project aims to enumerate all maximal similar-bicliques in a bipartite grap
 
 msbe is the executable, and is compiled on Ubuntu 18.04.5, with -O3 optimization.
 
-Folder "datasets" contains an exmpale bipartite graph bi_github.bin, which is downloaded from [KONECT](http://konect.cc/networks/dbpedia-writer/). 
+Folder "datasets" contains an exmpale bipartite graph bi_github.bin, which is downloaded from [KONECT](http://konect.cc/networks/github/). 
 
 
 ## Running Format
@@ -38,7 +38,7 @@ In the following, I will explain how to set the arguments to execute the code pr
 
 In summary, argument[1] is the input graph, arguments[2]-[5] control the index building, arguments[6]-[9] specify which index will be loaded, arguments[10][11] are the two important parameters \epsilon and \tau.
 
-When argument[2]=1, MSBE will build the index according to arguments[3][4][5], and arguments[6]-[11] will be ignored. The index will be stored in the folder "datatsets" and named by the arguments, i.e., "input graph" + "alpha x 100" + "gamma x 100" + "LG/SS.bin". Note that for LG index, argument[5] (i.e., \gamma) is not needed and should be set as 0.
+When argument[2]=1, msbe will build the index according to arguments[3][4][5], and arguments[6]-[11] will be ignored. The index will be stored in the folder "datatsets" and named by the arguments, i.e., "input graph" + "alpha x 100" + "gamma x 100" + "LG/SS.bin". Note that for LG index, argument[5] (i.e., \gamma) is not needed and should be set as 0.
 
 After the index is constructed, it is ready to make index based enumeration. Specifically, set argument[2]=0 and argument[6]=1. Set arguments[7][8][9] to load the corresponding index. (Note that, the name of the loaded index will be dirived in a same way as above, i.e., "input graph" + "alpha x 100" + "gamma x 100" + "LG/SS.bin". Thus, make sure arguments [8][9] are correctly set when loading the index. For LG index, argument[9] (i.e., \gamma) is not needed and should be set as 0.)
 
